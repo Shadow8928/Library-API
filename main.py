@@ -28,7 +28,8 @@ def add_book():
     new_book = {
         'id': data['id'],
         'title': data['title'],
-        'author': data['author']
+        'author': data['author'],
+        'status': "Available"
     }
     books.append(new_book)
     return jsonify(new_book), 201
